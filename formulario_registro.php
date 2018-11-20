@@ -38,84 +38,135 @@
 </head>
 
 <body>
- <header class="">
+    <header class="">
         <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
             <div class="navbar-toggler animate">
                 <span class="menu-icon"></span>
             </div>
             <ul class="navbar-menu animate">
-                <li>
-                    <a href="#pag2" class="animate">
-                        <span class="desc animate"> Who We Are </span>
-                        <span class="fas fa-address-card"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#blog" class="animate">
-                        <span class="desc animate"> What We Say </span>
-                        <span class="glyphicon glyphicon-info-sign"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact-us" class="animate">
-                        <span class="desc animate"> How To Reach Us </span>
-                        <span class="glyphicon glyphicon-comment"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+               <li>
+                <a href="index.html" class="animate">
+                    <span class="desc animate"> Inicio </span>
+                    <span class="far fa-arrow-alt-circle-up"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#pag2" class="animate">
+                    <span class="desc animate"> Iniciar Sesión </span>
+                    <span class="fas fa-address-card"></span>
+                </a>
+            </li>
+            <li>
+                <a href="formulario_registro.php.html" class="animate">
+                    <span class="desc animate"> Registrarse </span>
+                    <span class="far fa-calendar-plus"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact-us" class="animate">
+                    <span class="desc animate"> ¿Cómo alcanzarnos? </span>
+                    <span class="far fa-arrow-alt-circle-up"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
+</header>
+<form action="DB/registro_access.php" method="POST" >
+        <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
 
-    </header>
-    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
         <div class="wrapper wrapper--w780">
+
             <div class="card card-3">
+
                 <div class="card-heading"></div>
+
                 <div class="card-body">
-                    <h2 class="title">Registration Info</h2>
+
+                    <h2 class="title">Registracion</h2>
+
                     <form method="POST">
+
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
+
+                            <input class="input--style-3" type="text" placeholder="Nombre" name="txt_nombre">
+
                         </div>
+
                         <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
+
+                            <input class="input--style-3" type="text" placeholder="Contraseña" name="txt_password">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <input class="input--style-3 js-datepicker" type="text" placeholder="Fecha de nacimiento" name="txt_fecha">
+
                             <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+
                         </div>
+
                         <div class="input-group">
+
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
+
+                                <select name="txt_genero">
+
+                                    <option disabled="disabled" selected="selected">Género</option>
+
+                                    <option value="hombre" >Hombre</option>
+
+                                    <option value="mujer">Mujer</option>
+
+                                    <option value="otro">Otro</option>
+
                                 </select>
+
                                 <div class="select-dropdown"></div>
+
                             </div>
+
                         </div>
+
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="email">
+
+                            <input class="input--style-3" type="email" placeholder="Email" name="txt_email">
+
                         </div>
+
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+
+                            <input class="input--style-3" type="number" placeholder="Telefono" name="txt_telefono">
+
                         </div>
+
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+
+                            <button class="btn btn--pill btn--green" type="submit">Registrar</button>
+
                         </div>
+
                     </form>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+</form>
 
-    <!-- Jquery JS-->
+<!-- Jquery JS-->
 
-    <!-- Vendor JS-->
-    <script src="assets/vendor/select2/select2.min.js"></script>
-    <script src="assets/vendor/datepicker/moment.min.js"></script>
-    <script src="assets/vendor/datepicker/daterangepicker.js"></script>
+<!-- Vendor JS-->
+<script src="assets/vendor/select2/select2.min.js"></script>
+<script src="assets/vendor/datepicker/moment.min.js"></script>
+<script src="assets/vendor/datepicker/daterangepicker.js"></script>
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
+<!-- Main JS-->
+<script src="assets/js/global.js"></script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
